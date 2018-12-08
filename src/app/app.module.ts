@@ -7,6 +7,7 @@ import { HttpModule } from "@angular/http";
 import { AuthModule } from "./auth/auth.module";
 import { AuthService } from "./shared/services/auth.service";
 import { AuthGuard } from "./shared/services/auth.guard";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AuthGuard } from "./shared/services/auth.guard";
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    AuthModule
+    AuthModule,
+    BrowserAnimationsModule
   ],
   providers: [
     AuthService,
