@@ -50,7 +50,7 @@ export class AuthService extends BaseApi {
       .pipe(map((res: Response)=> {
         if(res.status == 200) {
           return "OK";
-        }else{
+        } else {
           return res.statusText;
         }
     }));

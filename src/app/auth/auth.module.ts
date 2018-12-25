@@ -7,12 +7,16 @@ import { AuthComponent } from "./auth.component";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 import { AuthService } from "../shared/services/auth.service";
+import { MatCardModule, MatInputModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   imports:[
     CommonModule,
     SharedModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule
   ],
   declarations:[
     AuthComponent,

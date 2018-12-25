@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class BaseApi {
 
-  private baseUrl: string = "localhost/todo/";
+  private baseUrl: string = "http://localhost/todo/";
   private options: RequestOptions;
 
   constructor(
